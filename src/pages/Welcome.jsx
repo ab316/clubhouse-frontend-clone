@@ -1,4 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../styles/welcome.module.css';
+import {Link} from 'react-router-dom';
 
 export default function Welcome() {
   return (
@@ -17,6 +19,15 @@ export default function Welcome() {
           join!
         </p>
         <p>Paul, Rohan & the Clubhouse team</p>
+      </div>
+      <div className={style.actionBtn}>
+        <Link
+          to="/get_username"
+          className="btn btn-primary d-flex align-items-center mb-3">
+          Get your username {/* <img src="" alt="" /> */}
+        </Link>
+
+        <Link to="/invite">Have an invite text? Sign in</Link>
       </div>
     </div>
   );

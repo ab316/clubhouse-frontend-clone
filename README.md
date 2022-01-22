@@ -1,2 +1,7 @@
-# clubhouse-frontend-clone
-Frontend only clone of Clubhouse using ReactJs and styled components
+# Clubhouse Clone
+
+Web frontend clone of the Clubhouse app
+
+## Technologies
+* ReactJs
+* Styled Components

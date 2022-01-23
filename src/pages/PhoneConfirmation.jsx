@@ -9,7 +9,7 @@ const PhoneConfirmation = () => {
   return (
     <div className={style.phoneConfirmationContainer}>
       <Link to="/" className={style.backBtn}>
-        <img src="/images/arrow.png" alt="Go Back" />
+        <img src="/images/arrow.png" alt="Back" />
       </Link>
       <h1>Enter your phone</h1>
       <PhoneInput

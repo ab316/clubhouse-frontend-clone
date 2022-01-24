@@ -13,7 +13,7 @@
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
-  color: var(--text-color);
+  color: var(--textColor);
 }
 
 .WelcomeInfo {
@@ -23,7 +23,7 @@
 
 .WelcomeInfo p {
   margin-bottom: 2em;
-  color: var(--text-color);
+  color: var(--textColor);
   font-size: 1em;
   font-style: normal;
   font-weight: 400;

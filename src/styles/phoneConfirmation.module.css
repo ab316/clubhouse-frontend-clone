@@ -14,7 +14,7 @@
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
-  color: var(--text-color);
+  color: var(--textColor);
 }
 
 .phoneConfirmationContainer p {

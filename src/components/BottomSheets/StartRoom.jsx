@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FcGlobe} from 'react-icons/fc';
-import {useState} from 'react/cjs/react.development';
 import style from '../../styles/bottomSheet.module.css';
 
 const StartRoom = ({setSheetVisible, setSheetCreateRoom}) => {

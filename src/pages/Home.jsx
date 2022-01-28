@@ -6,12 +6,13 @@ import DailyInfoCard from '../components/DailyInfoCard';
 import RoomInfoCard from '../components/RoomInfoCard';
 import style from '../styles/home.module.css';
 import data from '../data/roomCard.json';
+import newRoomData from '../data/newRoom.json';
 import BottomSheet from '../components/BottomSheet';
 
 const Home = () => {
   const [itemsVisible, setItemsVisible] = useState(true);
-  const [sheetVisible, setSheetVisible] = useState(false);
-  const [sheetCreateRoom, setSheetCreateRoom] = useState(false);
+  const [sheetStartRoomVisible, setSheetStartRoomVisible] = useState(false);
+  const [sheetNewRoomVisible, setSheetNewRoomVisible] = useState(false);
   const [loaderVisibility, setLoaderVisibility] = useState(false);
   const [cardId, setCardId] = useState(1);
 
@@ -38,7 +39,7 @@ const Home = () => {
         <RoomInfoCard />
       </div>
       <div className={style.actionBtn}>
-        <button onClick={() => setSheetVisible(true)}>
+        <button onClick={() => setSheetStartRoomVisible(true)}>
           <AiOutlinePlus className="me-2" />
           Start a room
         </button>
@@ -48,18 +49,26 @@ const Home = () => {
       </div>
 
       <BottomSheet
-        sheetTitle={'start room'}
-        sheetVisible={sheetVisible}
-        setSheetVisible={(val) => setSheetVisible(val)}
+        sheetTitle="start room"
+        sheetVisible={sheetStartRoomVisible}
+        setSheetVisible={(val) => setSheetStartRoomVisible(val)}
         setItemsVisible={(val) => setItemsVisible(val)}
         cardDetail={data.find((item) => item.id)}
         setSheetCreateRoom={(val) => {
           setLoaderVisibility(true);
           setTimeout(() => {
-            setSheetCreateRoom(val);
+            setSheetNewRoomVisible(val);
             setLoaderVisibility(false);
           }, 1_000);
         }}
+      />
+
+      <BottomSheet
+        sheetTitle="new room"
+        sheetVisible={sheetNewRoomVisible}
+        setSheetVisible={(val) => setSheetNewRoomVisible(val)}
+        setItemsVisible={(val) => setItemsVisible(val)}
+        cardDetail={newRoomData}
       />
     </>
   );

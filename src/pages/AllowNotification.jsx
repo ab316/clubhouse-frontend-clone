@@ -19,8 +19,8 @@ const AllowNotification = () => {
             <p>Notifications may include alerts, sounds and, icon badges</p>
           </div>
           <div className={style.actionBtn}>
-            <Link to="/">Don't Allow</Link>
-            <Link to="/">Allow</Link>
+            <Link to="/home">Don't Allow</Link>
+            <Link to="/home">Allow</Link>
             <img
               src="/images/handIcon.svg"
               alt="Hand"

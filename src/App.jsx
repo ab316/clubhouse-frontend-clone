@@ -8,6 +8,7 @@ import AllowNotification from './pages/AllowNotification';
 import AppLayout from './pages/layouts/AppLayout';
 import Home from './pages/Home';
 import Explore from './pages/Explore';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<AppLayout />}>
           <Route path="/home" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
     </Router>

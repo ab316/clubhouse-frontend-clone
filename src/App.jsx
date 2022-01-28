@@ -7,6 +7,7 @@ import CodeConfirm from './pages/CodeConfirm';
 import AllowNotification from './pages/AllowNotification';
 import AppLayout from './pages/layouts/AppLayout';
 import Home from './pages/Home';
+import Explore from './pages/Explore';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
         <Route path="/" element={<AppLayout />}>
           <Route path="/home" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
         </Route>
       </Routes>
     </Router>
